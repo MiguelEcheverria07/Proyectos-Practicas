@@ -56,8 +56,8 @@ button{
 }
 
 p{
-    display: inline;
-    position: fixed ;
-    margin-top: 22px;
+    display: inline-block;
+    vertical-align: middle;
     margin-left: 10px;
+    margin-bottom: 25px;
 }
