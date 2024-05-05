@@ -2,16 +2,29 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejemplo dinamico</title>
-    <script src="../js/utilidades.js">   
-    </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejemplo dinamico</title>
+  <link rel="stylesheet" href="../css/estilos.css">
+  <script src="../js/utilidades.js">
+  </script>
+
 </head>
 
 <body>
-  <button onclick="crearUI()">Presioname</button>
-    
+  <a href="#" onclick="crearUI()">
+    <i></i>
+    <i></i>
+    <span>Presioname</span>
+  </a>
+  <script>
+    let btn = document.querySelector("a");
+    btn.addEventListener("mousemove", e =>{
+      let rect = e.target.getBoundingClientRect();
+      let x =  e.clientX - rect.left;
+      btn.style.setProperty("--x", x + "deg");
+    });
+  </script>
 </body>
 
 </html>

@@ -24,10 +24,10 @@ function crearNodoImagen(nombreImagen, alt, width) {
 function crearUI() {
     if(!ejecutarFuncion){
     crearNodoConTexto('h1','Ejemplo JS');
-    crearNodoConTexto("p", "Este es un ejemplo de javascript");
-    crearNodoImagen("cielo.png","Cielo PNG", "500px");
+    crearNodoConTexto("p", "Este es un ejemplo de JavaScript");
+    crearNodoImagen("cielo.png","Cielo PNG", "25%");
     ejecutarFuncion = true;
     }else{
-      alert("Relajate, ya presionaste una vez")
+      alert("Relajate, ya presionaste una vez");
     }
 }
