@@ -25,7 +25,7 @@ function crearUI() {
     if(!ejecutarFuncion){
     crearNodoConTexto('h1','Ejemplo JS');
     crearNodoConTexto("p", "Este es un ejemplo de JavaScript");
-    crearNodoImagen("cielo.png","Cielo PNG", "25%");
+    crearNodoImagen("cielo.png","Cielo PNG", "45%");
     ejecutarFuncion = true;
     }else{
       alert("Relajate, ya presionaste una vez");
