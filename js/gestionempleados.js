@@ -44,6 +44,7 @@ function actualizar() {
     }
     localStorage.setItem("empleados", JSON.stringify(empleados));
 }
+    
 
 function eliminar() {
     var empleados = JSON.parse(localStorage.getItem("empleados") || "[]");
