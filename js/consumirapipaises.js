@@ -19,7 +19,6 @@ function consumirAPIPaises(){
     })
 }
 
-var tabla = document.createElement("table");
 var fila = document.createElement("tr");
 var columna = document.createElement("td");
 
