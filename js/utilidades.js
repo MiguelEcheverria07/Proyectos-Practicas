@@ -20,11 +20,26 @@ function crearNodoImagen(nombreImagen, alt, width) {
     return nodo;
 }
 
+function crearNodoImagenURL(url, alt, width) {
+    var nodo = crearNodo("img");
+    nodo.src = url;
+    nodo.alt = alt;
+    nodo.style.width = width;
+    return nodo;
+}
+
 function crearNodoLista(tipoNodo, textoNodo) {
     var nodo = crearNodo(tipoNodo);
     var textoNodo = document.createTextNode(textoNodo);
     nodo.appendChild(textoNodo);
     return nodo;
+}
+
+function borrarFilasTablas(tabla){
+    var totalFilas = tabla.rows.length;
+    for (let i = 1; i < totalFilas; i++) {  
+        totalFilas.deleteRow(i)
+    }
 }
 
 function adicionarNodoABody(nodo) {

@@ -4,15 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Paises</title>
+    <script src="../js/utilidades.js"></script>
     <script src="../js/consumirapipaises.js"></script>
 </head>
 
 <body>
-    <script>
-        consumirAPIPaises();
-        
-    </script>
+    <h1>Paises</h1>
+    <table id="tablaPaises">
+        <caption>Listado de Paises</caption>
+        <tr>
+            <th>Nombre</th>
+            <th>Capital</th>
+        </tr>
+    </table>
+
+    <button onclick="consumirAPIPaises()">Plobar Tabla Paises</button>
 </body>
 
 </html>
